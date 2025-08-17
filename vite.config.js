@@ -5,6 +5,7 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: './', // <-- chemins relatifs pour OVH
   plugins: [   
     tailwindcss(),
     react()
@@ -14,4 +15,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
+  build: {
+    outDir: 'dist', // dossier de build par défaut
+  }
 })
