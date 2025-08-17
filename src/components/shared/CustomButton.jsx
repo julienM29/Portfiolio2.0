@@ -12,9 +12,7 @@ const colorMap = {
   'border-dark-composant': '#3F4A51',
   'border-dark-bouton': '#EEEEEE',
   'bg-dark-text-primary': '#EEEEEE',
-  'border-dark-bouton ': '#FFB184',
   'border-gray-500': '#6B7280',
-  'border-dark-bouton ': '#EEEEEE'
 };
 
 const CustomButton = ({ icone, link, rel ,target, nom, bgColor, borderColor, textColor }) => {
