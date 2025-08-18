@@ -47,7 +47,7 @@ const ConteneurProjet = ({
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.15, ease: 'easeOut' }}
         viewport={{ once: true, amount: 0.3 }}
-        className="flex-1 flex flex-col space-y-10"
+        className="flex-1 flex flex-col space-y-8"
       >
         {/* Technologies */}
         <div className="flex flex-wrap gap-2">
@@ -82,7 +82,7 @@ const ConteneurProjet = ({
             nom="En savoir plus"
             icone={<FaArrowRight className="w-5 h-5" />}
             bgColor={isLight ? 'bg-light-bouton' : 'bg-dark-bouton'}
-            borderColor={isLight ? 'border-light-bouton ' : 'border-dark-bouton '}
+            borderColor={isLight ? 'border-light-bouton' : 'border-dark-bouton'}
             textColor={isLight ? 'text-black' : 'text-dark-primary'}
           />
           <CustomButton
@@ -92,7 +92,7 @@ const ConteneurProjet = ({
             link={"https://github.com/julienM29"}
             nom="GitHub"
             bgColor={isLight ? 'bg-light-bouton-second' : 'bg-dark-bouton-second'}
-            borderColor={isLight ? 'border-light-bouton' : 'border-dark-bouton '}
+            borderColor={isLight ? 'border-light-bouton' : 'border-dark-bouton'}
             textColor={isLight ? 'text-black' : 'text-dark-primary'}
           />
         </div>

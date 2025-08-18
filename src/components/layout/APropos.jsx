@@ -104,7 +104,7 @@ function APropos({ isLight }) {
                 rel="noopener noreferrer"
                 target="_blank"
                 icone={<FaFilePdf className="w-5 h-5" />}
-                link="/public/MiossecJulienCV.pdf"
+                link="/MiossecJulienCV.pdf"
                 nom="Voir le CV"
                 bgColor={isLight ? 'bg-light-bouton-second' : 'bg-dark-bouton-second'}
                 borderColor={isLight ? 'border-light-bouton' : 'border-dark-bouton'}
@@ -177,7 +177,7 @@ function APropos({ isLight }) {
               <h2 className="titre font-bold text-xl sm:text-2xl text-center">{cat.titre}</h2>
               <motion.div className="flex flex-wrap justify-center gap-2">
                 {cat.techs.map((tech) => (
-                  <motion.div key={tech.nom} variants={badgeVariant} whileHover={{ scale: 1.1 }}>
+                  <motion.div key={tech.nom} variants={badgeVariant} whileHover={{ scale: 1.05 }}>
                     <BadgeTechnologie isLight={isLight} nom={tech.nom} image={tech.image} couleur={tech.couleur} />
                   </motion.div>
                 ))}

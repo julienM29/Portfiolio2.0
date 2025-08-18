@@ -120,7 +120,7 @@ function ProjetPrésentation({
           {technologies.map((techno, index) => (
             <div
               key={techno}
-              className={`inline-flex items-center gap-2 rounded-full border py-1  px-3 
+              className={`inline-flex items-center gap-2 rounded-full border-2 py-1  px-3 
         text-sm sm:text-base
         ${isLight
                   ? 'border-light bg-light-composant text-light-primary focus:ring-light-accent'
@@ -146,16 +146,16 @@ function ProjetPrésentation({
         <motion.div
           variants={childVariants}
           className={`text-sm md:text-base text-justify leading-relaxed space-y-3 md:space-y-4
-                  ${isLight ? 'text-light-secondary' : 'text-dark-secondary'} font-bold`}
+                  ${isLight ? 'text-light-primary' : 'text-dark-primary'} font-bold`}
         >
           {description.map((p, idx) => (
             <p key={idx}>{p}</p>
           ))}
         </motion.div>
         <motion.div
-  variants={childVariants}
-  className={`h-[1px] w-full ${isLight ? 'bg-black/50' : 'bg-white/70'}`}
-></motion.div>
+          variants={childVariants}
+          className={`h-[1px] w-full ${isLight ? 'bg-black/50' : 'bg-white/70'}`}
+        ></motion.div>
 
       </div>
 
@@ -174,6 +174,7 @@ function ProjetPrésentation({
               <img
                 src={src}
                 alt={`Capture ${idx + 1}`}
+                loading='lazy'
                 className="w-full h-auto object-cover aspect-video rounded-2xl cursor-pointer"
                 onClick={() => {
                   setIndex(idx);

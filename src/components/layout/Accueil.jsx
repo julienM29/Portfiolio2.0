@@ -2,6 +2,7 @@ import React from 'react';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import CustomButton from '../shared/CustomButton';
 import { motion } from 'framer-motion';
+import { isMobile } from "react-device-detect";
 
 const containerVariants = {
   initial: { opacity: 0, y: 30 },
@@ -25,6 +26,9 @@ const childVariants = {
 
 
 function Accueil({ isLight, setIsLight }) {
+  const linkedinLink = isMobile
+    ? "linkedin://in/julien-miossec-a55869210/" // ouvre l’app mobile si installée
+    : "https://www.linkedin.com/in/julien-miossec-a55869210/"; // ouvre la version web
   return (
     <motion.section
       id="Accueil"
@@ -73,7 +77,7 @@ function Accueil({ isLight, setIsLight }) {
             rel='noopener noreferrer'
             target='_blank'
             icone={<FaLinkedin className="w-6 h-6" />}
-            link={"https://www.linkedin.com/in/julien-miossec-a55869210/"}
+            link={linkedinLink}
             nom="LinkedIn"
             bgColor={isLight ? 'bg-light-bouton' : 'bg-dark-bouton'}
             borderColor={isLight ? 'border-light-bouton' : 'border-dark-bouton'}
@@ -86,7 +90,7 @@ function Accueil({ isLight, setIsLight }) {
             link={"https://github.com/julienM29"}
             nom="GitHub"
             bgColor={isLight ? 'bg-light-bouton-second' : 'bg-dark-bouton-second'}
-            borderColor={isLight ? 'border-light-bouton' : 'border-dark-bouton '}
+            borderColor={isLight ? 'border-light-bouton' : 'border-dark-bouton'}
             textColor={isLight ? 'text-black' : 'text-dark-primary'}
           />
         </motion.div>

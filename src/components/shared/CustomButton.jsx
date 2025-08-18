@@ -16,7 +16,7 @@ const colorMap = {
 };
 
 const CustomButton = ({ icone, link, rel ,target, nom, bgColor, borderColor, textColor }) => {
-  const shadowColor = colorMap[borderColor] || '#000';
+  const shadowColor = colorMap[borderColor];
 
   return (
     <Link

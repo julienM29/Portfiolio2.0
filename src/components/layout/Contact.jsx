@@ -99,13 +99,13 @@ function Contact({ isLight }) {
       animate={contactInView ? 'visible' : 'hidden'}
       variants={containerVariants}
       id="contact"
-      className={`w-[90%] sm:w-4/5 md:w-7/12 mx-auto flex flex-col rounded-2xl space-y-6 md:space-y-10 scroll-mt-12 ${isLight ? 'text-light-primary' : 'text-dark-primary'
+      className={`w-11/12 sm:w-9/12 md:w-7/12 mx-auto   flex flex-col rounded-2xl space-y-6 md:space-y-10 scroll-mt-28 md:scroll-mt-12 ${isLight ? 'text-light-primary' : 'text-dark-primary'
         }`}
     >
       <ToastContainer />
       <motion.h2
         variants={childVariants}
-        className={`titre max-md:text-center font-bold text-2xl md:text-4xl ${isLight ? 'text-light-primary' : 'text-dark-primary'
+        className={`titre font-bold text-3xl md:text-4xl text-center sm:text-left ${isLight ? 'text-light-primary' : 'text-dark-primary'
           }`}
       >
         Contact
@@ -189,7 +189,7 @@ function Contact({ isLight }) {
               placeholder="Message..."
               required
               rows={6}
-              className={`rounded-xl p-4 h-32 md:h-42 text-base md:text-base font-medium resize-none border shadow-sm focus:outline-none focus:ring-2 ${isLight
+              className={`rounded-xl p-4 h-64 md:h-42 text-base md:text-base font-medium resize-none border shadow-sm focus:outline-none focus:ring-2 ${isLight
                 ? 'bg-white text-gray-900 border-light focus:ring-light-accent'
                 : 'bg-dark-text-primary text-black border-dark-composant focus:ring-dark-accent'
                 }`}

@@ -34,9 +34,6 @@ const ConteneurProjetMobile = ({
 
       {/* Texte + techs */}
       <div className="space-y-4">
-        <h3 className="titre text-2xl font-semibold">{nomProjet}</h3>
-
-        {/* Technologies */}
         <div className="flex flex-wrap gap-2">
           {listeTechnologies.map((tech, index) => (
             <ConteneurTechnologie
@@ -48,6 +45,10 @@ const ConteneurProjetMobile = ({
             />
           ))}
         </div>
+        <h3 className="titre text-2xl font-semibold">{nomProjet}</h3>
+
+        {/* Technologies */}
+        
 
         {/* Description */}
         <div className="text-sm flex flex-col gap-2 leading-relaxed text-justify">
@@ -63,7 +64,7 @@ const ConteneurProjetMobile = ({
             nom="Plus d'infos"
             icone={<FaArrowRight className="w-5 h-5" />}
             bgColor={isLight ? 'bg-light-bouton' : 'bg-dark-bouton'}
-            borderColor={isLight ? 'border-light-bouton ' : 'border-dark-bouton '}
+            borderColor={isLight ? 'border-light-bouton' : 'border-dark-bouton'}
             textColor={isLight ? 'text-black' : 'text-dark-primary'}
           />
           <CustomButton
@@ -73,7 +74,7 @@ const ConteneurProjetMobile = ({
             link={"https://github.com/julienM29"}
             nom="GitHub"
             bgColor={isLight ? 'bg-light-bouton-second' : 'bg-dark-bouton-second'}
-            borderColor={isLight ? 'border-light-bouton' : 'border-dark-bouton '}
+            borderColor={isLight ? 'border-light-bouton' : 'border-dark-bouton'}
             textColor={isLight ? 'text-black' : 'text-dark-primary'}
           />
         </div>

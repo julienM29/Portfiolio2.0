@@ -1,8 +1,6 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import logoPortfolioLightMode from '../../assets/logo_LightMode.png';
-import logoPortfolioDarkMode from '../../assets/logo_DarkMode.png';
-import logoPortfolioLightMode2 from '../../assets/logo_portfolio.png';
-import logoPortfolioDarkMode2 from '../../assets/logo_portfolio_blanc.png';
+import logoPortfolioLightMode from '../../assets/logo_LightMode.webp';
+import logoPortfolioDarkMode from '../../assets/logo_DarkMode.webp';
 import LienHeader from '../shared/LienHeader';
 import { Sun, Moon } from 'lucide-react';
  
