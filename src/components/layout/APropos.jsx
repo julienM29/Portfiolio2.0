@@ -31,7 +31,7 @@ function APropos({ isLight }) {
       className={`w-11/12 sm:w-9/12 md:w-7/12 mx-auto space-y-12 sm:space-y-16 scroll-mt-28 md:scroll-mt-12 ${isLight ? 'bg-light text-light-primary' : 'text-dark-primary'
         }`}
     >
-      {/* Titre principal */}
+      {/* Titre principale */}
       <motion.h2
         variants={sectionVariants}
         initial="hidden"
