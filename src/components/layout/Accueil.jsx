@@ -26,9 +26,6 @@ const childVariants = {
 
 
 function Accueil({ isLight, setIsLight }) {
-  const linkedinLink = isMobile
-    ? "linkedin://in/julien-miossec-a55869210/" // ouvre l’app mobile si installée
-    : "https://www.linkedin.com/in/julien-miossec-a55869210/"; // ouvre la version web
   return (
     <motion.section
       id="Accueil"
@@ -77,7 +74,7 @@ function Accueil({ isLight, setIsLight }) {
             rel='noopener noreferrer'
             target='_blank'
             icone={<FaLinkedin className="w-6 h-6" />}
-            link={linkedinLink}
+            link={"https://www.linkedin.com/in/julien-miossec-a55869210/"}
             nom="LinkedIn"
             bgColor={isLight ? 'bg-light-bouton' : 'bg-dark-bouton'}
             borderColor={isLight ? 'border-light-bouton' : 'border-dark-bouton'}
