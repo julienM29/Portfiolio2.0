@@ -1,4 +1,4 @@
-import{j as e,r as g,u as v,a as f,m as a,F as j,C as y,b as w}from"./index-D388EJWE.js";const N=({isLight:t,nom:i,image:n,couleur:o})=>e.jsxs("div",{role:"listitem",className:`inline-flex items-center gap-1.5 md:gap-2 rounded-full 
+import{j as e,r as g,u as v,a as f,m as a,F as j,C as y,b as w}from"./index-rVC-qB4s.js";const N=({isLight:t,nom:i,image:n,couleur:o})=>e.jsxs("div",{role:"listitem",className:`inline-flex items-center gap-1.5 md:gap-2 rounded-full 
         border py-0.5 md:py-1 px-2.5 md:px-3 
         max-md:text-xs text-sm
         ${t?"border-black/40 bg-white text-light-primary":"border-white/60 bg-gray-800 text-white"}
