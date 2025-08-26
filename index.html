@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- SEO -->
   <title>Julien Miossec - Portfolio Développeur Web et Web Mobile</title>
   <meta name="description" content="Développeur web à la recherche d'une alternance en conception et développement d'applications (Bac+5) ou d'une première expérience professionnelle. Découvrez mes compétences et mes projets.">
@@ -15,35 +15,47 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Julien Miossec - Portfolio Développeur Web et Web Mobile">
   <meta property="og:description" content="Découvrez mes compétences et mes projets en développement web et web mobile.">
-  <meta property="og:image" content="src/assets/logo_LightMode.png">
-  <meta property="og:url" content="https://ton-site.com">
+  <meta property="og:image" content="src/assets/logo_DarkMode.png">
+  <meta property="og:url" content="https://julien-miossec.com">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Julien Miossec - Portfolio Développeur Web et Web Mobile">
   <meta name="twitter:description" content="Découvrez mes compétences et mes projets en développement web et web mobile.">
-  <meta name="twitter:image" content="src/assets/logo_LightMode.png">
+  <meta name="twitter:image" content="src/assets/logo_DarkMode.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
+  <!-- Winky Sans -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap">
+  </noscript>
+
+  <!-- Shippori Antique -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap">
+  </noscript>
+
+  <!-- Styles  -->
+  <link rel="stylesheet" href="data:text/css;base64,QGltcG9ydCAidGFpbHdpbmRjc3MiOw0KQGltcG9ydCAidHctYW5pbWF0ZS1jc3MiOw0KQGltcG9ydCAnZGV2aWNvbi9kZXZpY29uLm1pbi5jc3MnOw0KDQovKiBAbGF5ZXIgdXRpbGl0aWVzIDogYWpvdXQgdW5pcXVlbWVudCBwb3VyIGNlIHF1ZSB0dSB2ZXV4IHJlbmRyZSBvdmVycmlkZS1hYmxlICovDQpAbGF5ZXIgdXRpbGl0aWVzIHsNCiAgLnRpdHJlIHsNCiAgICBmb250LWZhbWlseTogJ1dpbmt5IFNhbnMnLCBzYW5zLXNlcmlmOw0KICB9DQpodG1sIHsNCiAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7DQp9DQoNCg0KICAuYmctbGlnaHQgew0KICAgIGJhY2tncm91bmQtY29sb3I6ICNGRkY5RjI7DQogIH0NCg0KICAuYmctbGlnaHQtY29tcG9zYW50IHsNCiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRkZFRURCOw0KICB9DQoNCiAgLmJnLWxpZ2h0LWJvdXRvbiB7DQogIGJhY2tncm91bmQtY29sb3I6ICNmZGJhNjg7DQp9DQoNCi8qIC5iZy1saWdodC1ib3V0b246aG92ZXIgew0KICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZiMTUxOyAvKiB1biBwZXUgcGx1cyBmb25jw6kgcXVlICNGNUI3NjkgIA0KfSAqLw0KDQouYmctbGlnaHQtYm91dG9uLXNlY29uZCB7DQogIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmY7DQp9DQoNCi8qIC5iZy1saWdodC1ib3V0b24tc2Vjb25kOmhvdmVyIHsNCiAgYmFja2dyb3VuZC1jb2xvcjogI2ZjYWY1MTsgLyogdW4gcGV1IHBsdXMgZm9uY8OpIHF1ZSAjZmZkOWFiICAgDQp9ICovDQoNCiAgLnRleHQtbGlnaHQtcHJpbWFyeSB7DQogICAgY29sb3I6ICMyRTJFMkU7DQogIH0NCg0KICAudGV4dC1saWdodC1zZWNvbmRhcnkgew0KICAgIGNvbG9yOiAjNkY0RDI5Ow0KICB9DQoNCiAgLmJvcmRlci1saWdodCB7DQogICAgYm9yZGVyLWNvbG9yOiAjRUFEOEMyOw0KICB9DQoNCiAgLmJvcmRlci1saWdodC1ib3V0b24gew0KICAgIGJvcmRlci1jb2xvcjogIzFFMTYwRjsNCiAgfQ0KDQogIC5ib3JkZXItbGlnaHQtY29udHJhc3Qgew0KICAgIGJvcmRlci1jb2xvcjogI0MwOEEzRTsNCiAgfQ0KDQogIC50ZXh0LWxpZ2h0LWNvbnRyYXN0IHsNCiAgICBjb2xvcjogI0MwOEEzRTsNCiAgfQ0KDQogIC5iZy1kYXJrIHsNCiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMTcxMjBFOw0KICB9DQoNCiAgLmJnLWRhcmstY29tcG9zYW50IHsNCiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMzkzRTQ2Ow0KICB9DQoNCiAgLmJnLWRhcmstYm91dG9uIHsNCiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRDY1QTMxOw0KICB9DQoNCiAgLmJnLWRhcmstdGV4dC1wcmltYXJ5IHsNCiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRUVFRUVFOw0KICB9DQoNCiAgLnRleHQtZGFyay1wcmltYXJ5IHsNCiAgICBjb2xvcjogI0VFRUVFRTsNCiAgfQ0KDQogIC5ib3JkZXItZGFyay1ib3V0b24gew0KICAgIGJvcmRlci1jb2xvcjogI0VFRUVFRTsNCiAgfQ0KDQogIC50ZXh0LWRhcmstdGV4dC1zZWNvbmRhcnkgew0KICAgIGNvbG9yOiAjQzZDNkM2Ow0KICB9DQoNCiAgLmJvcmRlci1kYXJrLWJvcmRlciB7DQogICAgYm9yZGVyLWNvbG9yOiAjM0Y0QTUxOw0KICB9DQoNCiAgLmJvcmRlci1kYXJrLWFjY2VudCB7DQogICAgYm9yZGVyLWNvbG9yOiAjRDY1QTMxOw0KICB9DQoNCiAgLmJvcmRlci1kYXJrLWNvbnRyYXN0IHsNCiAgICBib3JkZXItY29sb3I6ICNGRkIxODQ7DQogIH0NCg0KICAuYmctZGFyay1ib3V0b24tc2Vjb25kIHsNCiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNEI1NTYzOw0KICB9DQoNCiAgLmJvcmRlci1kYXJrLWJ1dHRvbi1zZWNvbmQgew0KICAgIGJvcmRlci1jb2xvcjogI0NCRDVFMTsNCiAgfQ0KDQogIC50ZXh0LWRhcmstY29udHJhc3Qgew0KICAgIGNvbG9yOiAjRjM4QTVDOw0KICB9DQoNCiAgLmJnLWRhcmstY29udHJhc3Qgew0KICAgIGJhY2tncm91bmQtY29sb3I6ICNGMzhBNUM7DQogIH0NCg0KICAuYmctZGFyay1hY2NlbnQtc29mdCB7DQogICAgYmFja2dyb3VuZC1jb2xvcjogI2I4NDkyMjsNCiAgfQ0KDQogIC5mb2N1c1w6cmluZy1kYXJrLWFjY2VudCB7DQogICAgLS10dy1yaW5nLWNvbG9yOiAjRDY1QTMxOw0KICB9DQoNCiAgLmZvY3VzXDpyaW5nLWxpZ2h0LWFjY2VudCB7DQogICAgLS10dy1yaW5nLWNvbG9yOiAjRkZCMTg0Ow0KICB9DQogIA0KICB9DQouY3VzdG9tLXBhZ2luYXRpb24gLnN3aXBlci1wYWdpbmF0aW9uLWJ1bGxldCB7DQogICAgd2lkdGg6IDEwcHggIWltcG9ydGFudDsNCiAgICBoZWlnaHQ6IDEwcHggIWltcG9ydGFudDsNCiAgICBib3JkZXItcmFkaXVzOiA5OTk5cHggIWltcG9ydGFudDsNCiAgICBvcGFjaXR5OiAxICFpbXBvcnRhbnQ7DQogICAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAwLjJzIGVhc2UgIWltcG9ydGFudDsNCiAgfQ0KDQogIC5wYWdpbmF0aW9uLWxpZ2h0IC5zd2lwZXItcGFnaW5hdGlvbi1idWxsZXQgew0KICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDAwMDAgIWltcG9ydGFudDsNCiAgICBvcGFjaXR5OiAxICFpbXBvcnRhbnQ7DQogIH0NCg0KICAucGFnaW5hdGlvbi1saWdodCAuc3dpcGVyLXBhZ2luYXRpb24tYnVsbGV0LnN3aXBlci1wYWdpbmF0aW9uLWJ1bGxldC1hY3RpdmUgew0KICAgIGJhY2tncm91bmQtY29sb3I6ICNmNWI3NjkgIWltcG9ydGFudDsNCiAgICBvcGFjaXR5OiAxICFpbXBvcnRhbnQ7DQogIH0NCg0KICAucGFnaW5hdGlvbi1kYXJrIC5zd2lwZXItcGFnaW5hdGlvbi1idWxsZXQgew0KICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmYgIWltcG9ydGFudDsNCiAgICBvcGFjaXR5OiAxICFpbXBvcnRhbnQ7DQogIH0NCg0KICAucGFnaW5hdGlvbi1kYXJrIC5zd2lwZXItcGFnaW5hdGlvbi1idWxsZXQuc3dpcGVyLXBhZ2luYXRpb24tYnVsbGV0LWFjdGl2ZSB7DQogICAgYmFja2dyb3VuZC1jb2xvcjogI2ZkOWY2OSAhaW1wb3J0YW50Ow0KICAgIG9wYWNpdHk6IDEgIWltcG9ydGFudDsNCiAgfQ0KIA0KICBib2R5IHsNCiAgICBmb250LWZhbWlseTogJ1NoaXBwb3JpIEFudGlxdWUgQjEnLCBzYW5zLXNlcmlmOw0KICB9DQoNCg==" media="print" onload="this.media='all'">
+  <noscript></noscript>
 
   <!-- Favicons -->
-  <link rel="icon" type="image/png" sizes="16x16" href="./logo_LightMode.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./logo_LightMode.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="./logo_LightMode.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./logo_LightMode.png">
-  <script type="module" crossorigin src="./assets/index-DaiynbWS.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-Cc2XSACE.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="./logo_DarkMode.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./logo_DarkMode.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="./logo_DarkMode.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./logo_DarkMode.png">
+  <script type="module" crossorigin src="./assets/index-rVC-qB4s.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-5M89q5Sp.css">
 </head>
 
-
 <body>
-  <div id="root"></div>
+  <div id="root"></div>
+
 </body>
 
 </html>
