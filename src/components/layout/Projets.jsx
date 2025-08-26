@@ -2,17 +2,19 @@ import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
 
+import ConteneurProjet from '../shared/ConteneurProjet';
+import ConteneurProjetMobile from '../shared/ConteneurProjetMobile';
+
 import logoEvent from '../../assets/accueil.webp';
 import logoPizzeria from '../../assets/accueil_PizzaOnLine.webp';
 import logoKerisnel from '../../assets/e-commerce/site_kerisnel.webp';
-
-import ConteneurProjet from '../shared/ConteneurProjet';
-import ConteneurProjetMobile from '../shared/ConteneurProjetMobile';
 
 function Projets({ isLight }) {
   const projetsRef = useRef(null);
   const projetsInView = useInView(projetsRef, { once: true, margin: '-100px' });
   const isDesktop = useMediaQuery({ minWidth: 768 });
+
+  const textPrimary = isLight ? 'text-light-primary' : 'text-dark-primary';
 
   const sectionVariants = {
     hidden: { opacity: 0, y: 40 },
@@ -49,14 +51,6 @@ function Projets({ isLight }) {
     }
   ];
 
-  // Fonction pour rendre le composant selon la taille écran
-  const renderProjet = (projet) => {
-    if (isDesktop) {
-      return <ConteneurProjet key={projet.nomProjet} isLight={isLight} {...projet} />;
-    }
-    return <ConteneurProjetMobile key={projet.nomProjet} isLight={isLight} {...projet} />;
-  };
-
   return (
     <motion.div
       ref={projetsRef}
@@ -68,12 +62,18 @@ function Projets({ isLight }) {
     >
       <motion.h2
         variants={sectionVariants}
-        className={`titre font-bold text-3xl md:text-4xl text-center md:text-left ${isLight ? 'text-light-primary' : 'text-dark-primary'}`}
+        className={`titre font-bold text-3xl md:text-4xl text-center md:text-left ${textPrimary}`}
       >
         Mes projets
       </motion.h2>
 
-      {projets.map(projet => renderProjet(projet))}
+      {projets.map(projet => (
+        isDesktop
+          ? 
+          <ConteneurProjet key={projet.nomProjet} isLight={isLight} {...projet} />
+          : 
+          <ConteneurProjetMobile key={projet.nomProjet} isLight={isLight} {...projet} />
+      ))}
     </motion.div>
   );
 }

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- SEO -->
   <title>Julien Miossec - Portfolio Développeur Web et Web Mobile</title>
   <meta name="description" content="Développeur web à la recherche d'une alternance en conception et développement d'applications (Bac+5) ou d'une première expérience professionnelle. Découvrez mes compétences et mes projets.">
@@ -15,35 +15,47 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Julien Miossec - Portfolio Développeur Web et Web Mobile">
   <meta property="og:description" content="Découvrez mes compétences et mes projets en développement web et web mobile.">
-  <meta property="og:image" content="src/assets/logo_LightMode.png">
-  <meta property="og:url" content="https://ton-site.com">
+  <meta property="og:image" content="src/assets/logo_DarkMode.png">
+  <meta property="og:url" content="https://julien-miossec.com">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Julien Miossec - Portfolio Développeur Web et Web Mobile">
   <meta name="twitter:description" content="Découvrez mes compétences et mes projets en développement web et web mobile.">
-  <meta name="twitter:image" content="src/assets/logo_LightMode.png">
+  <meta name="twitter:image" content="src/assets/logo_DarkMode.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="/src/index.css">
+  <!-- Winky Sans -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap">
+  </noscript>
+
+  <!-- Shippori Antique -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap">
+  </noscript>
+
+  <!-- Styles  -->
+  <link rel="preload" href="/src/index.css" as="style">
+  <link rel="stylesheet" href="/src/index.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/src/index.css"></noscript>
 
   <!-- Favicons -->
-  <link rel="icon" type="image/png" sizes="16x16" href="/logo_LightMode.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/logo_LightMode.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="/logo_LightMode.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/logo_LightMode.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/logo_DarkMode.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo_DarkMode.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/logo_DarkMode.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/logo_DarkMode.png">
 </head>
-
 
 <body>
   <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+
+   <script type="module" src="/src/main.jsx" defer></script>
 </body>
 
 </html>

@@ -37,6 +37,8 @@ const ConteneurProjet = ({
           aria-label={`Capture d'écran du projet ${nomProjet}`}
           decoding="async"
           loading="lazy"
+          height='1842'
+          width='909'
           className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105 will-change-transform"
         />
       </motion.div>

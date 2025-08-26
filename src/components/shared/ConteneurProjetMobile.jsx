@@ -27,8 +27,12 @@ const ConteneurProjetMobile = ({
       <a href={lienProjet} className="block w-full aspect-video overflow-hidden rounded-xl group">
         <img
           src={imageProjet}
+          height='1842'
+          width='909'
           alt={`Image du projet ${nomProjet}`}
           className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+          decoding="async"
+          loading="lazy"
         />
       </a>
 
