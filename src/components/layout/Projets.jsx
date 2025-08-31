@@ -1,9 +1,7 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { useMediaQuery } from 'react-responsive';
 
 import ConteneurProjet from '../shared/ConteneurProjet';
-import ConteneurProjetMobile from '../shared/ConteneurProjetMobile';
 
 import logoEvent from '../../assets/accueil.webp';
 import logoPizzeria from '../../assets/accueil_PizzaOnLine.webp';
@@ -12,7 +10,6 @@ import logoKerisnel from '../../assets/e-commerce/site_kerisnel.webp';
 function Projets({ isLight }) {
   const projetsRef = useRef(null);
   const projetsInView = useInView(projetsRef, { once: true, margin: '-100px' });
-  const isDesktop = useMediaQuery({ minWidth: 768 });
 
   const textPrimary = isLight ? 'text-light-primary' : 'text-dark-primary';
 
@@ -68,11 +65,7 @@ function Projets({ isLight }) {
       </motion.h2>
 
       {projets.map(projet => (
-        // isDesktop
-        //   ? 
           <ConteneurProjet key={projet.nomProjet} isLight={isLight} {...projet} />
-          // : 
-          // <ConteneurProjetMobile key={projet.nomProjet} isLight={isLight} {...projet} />
       ))}
     </motion.div>
   );

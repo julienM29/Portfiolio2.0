@@ -6,7 +6,6 @@ import { Sun, Moon } from 'lucide-react';
 
 function Header({ isLight, setIsLight }) {
   const location = useLocation();
-  const navigate = useNavigate();
   const isHome = location.pathname === '/';
 
   return (

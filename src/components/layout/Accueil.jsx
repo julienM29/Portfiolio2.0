@@ -24,10 +24,8 @@ const childVariants = {
 };
 
 function Accueil({ isLight }) {
-  // Media query pour détecter mobile
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
-  // Variables thème pour simplifier JSX
   const textPrimary = isLight ? 'text-light-primary' : 'text-dark-primary';
   const textContrast = isLight ? 'text-light-contrast' : 'text-dark-contrast';
   const textSecondary = isLight ? 'text-light-secondary' : 'text-dark-secondary';
