@@ -27,7 +27,9 @@ const projetECommerce = (isLight) => ({
                 > Node.js </span> avec Fastify pour l’API backend, et
                 <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'
                     } font-bold`}
-                > MySQL </span> pour la base de données. Les échanges client/serveur sont assurés via une architecture REST.
+                > MySQL </span> pour la base de données. Les échanges client/serveur sont assurés via une architecture <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'
+                    } font-bold`}
+                > API REST </span>.
             </p>
         </>
     ),
@@ -103,7 +105,7 @@ const projetECommerce = (isLight) => ({
                         L’utilisateur peut <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>modifier ou supprimer</span> un produit directement depuis la modale, ou accéder à sa fiche en cliquant sur son nom ou son image. Un bouton permet de rejoindre la page panier pour <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>ajouter une garantie</span>, <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>modifier la commande</span> ou <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>la valider</span>.
                     </p>
                     <p>
-                        Le panier bénéficie d’un <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>système de mise à jour en temps réel</span> grâce à Redux, permettant à la modale latérale de se mettre automatiquement à jour lors de l’<span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>ajout rapide</span> d’un produit.
+                        Le panier se met à jour en temps réel via l'utilisation de  <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>Redux</span>, permettant à la modale latérale de se mettre automatiquement à jour lors de l’<span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>ajout rapide</span> d’un produit.
                     </p>
                 </>
             ),
@@ -116,12 +118,20 @@ const projetECommerce = (isLight) => ({
                 <>
                     <p>Un <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'
                         } font-bold`}
-                    > menu de filtres</span> complet permet de filtrer par prix (slider), couleur, disponibilité, etc. <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'
+                    > menu de filtres</span> complet permet de filtrer par
+                    <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}> prix</span> (avec un double slider), 
+                    <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}> couleur</span>,
+                    <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}> mois de floraison</span>,
+                     etc... 
+                     </p>
+                      <p><span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'
                         } font-bold`}
                     > Redux</span> garantit la synchronisation du menu de filtre de la page présentant tous les produits avec le menu de filtre accessible sur chaque page.</p>
                     <p>La version mobile  utilise des <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'
                         } font-bold`}
-                    > bottom sheets</span> pour le panier ou les filtres tandis que la version desktop utilise des modales.</p>
+                    > bottom sheets</span> pour le panier ou les filtres tandis que la version desktop utilise des <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'
+                        } font-bold`}
+                    > modales</span>.</p>
                 </>
             ),
         },

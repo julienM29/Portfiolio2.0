@@ -146,7 +146,7 @@ function Contact({ isLight }) {
               placeholder="Message..."
               required
               rows={6}
-              className={`rounded-xl p-4 text-base font-medium resize-none border shadow-sm focus:outline-none focus:ring-2 ${isLight ? 'bg-white text-gray-900 border-light focus:ring-light-accent' : 'bg-dark-text-primary text-black border-dark-composant focus:ring-dark-accent'}`}
+              className={`rounded-xl h-48 p-4 text-base font-medium resize-none border shadow-sm focus:outline-none focus:ring-2 ${isLight ? 'bg-white text-gray-900 border-light focus:ring-light-accent' : 'bg-dark-text-primary text-black border-dark-composant focus:ring-dark-accent'}`}
             />
           </motion.div>
 

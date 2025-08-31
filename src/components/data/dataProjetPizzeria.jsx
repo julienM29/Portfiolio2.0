@@ -74,7 +74,7 @@ const dataProjetPizzeria = (isLight) => ({
           La page principale affiche tous les produits sous forme de <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>cartes</span> contenant une image, un titre, un prix et deux actions : un lien <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>“En savoir plus”</span> menant à la page du produit, et un bouton <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>“Ajouter au panier”</span>.
         </p>
         <p>
-          Ce bouton ouvre une <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>modale interactive</span> permettant de choisir la <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>quantité</span> et la <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>taille</span> du produit avant de l’ajouter au panier.
+          Le bouton d'ajout au panier ouvre une <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>modale interactive</span> permettant de choisir la <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>quantité</span> et la <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>taille</span> du produit avant de l’ajouter.
         </p>
         <p>
           Un <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>menu de filtres</span> permet de trier les produits par catégorie, prix, etc.
@@ -102,7 +102,7 @@ const dataProjetPizzeria = (isLight) => ({
     contenu: (
       <>
         <p>
-          La page de livraison côté client intègre une carte interactive via <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>Leaflet</span>. Elle permet de voir en temps réel la <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>position du livreur</span> ainsi que l’<span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>adresse de livraison</span>.
+          La page de livraison côté client intègre une carte interactive via <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>Leaflet</span>. Elle permet de voir en temps réel la <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>position du livreur</span> et ses informations pour le contacter ainsi que l’<span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>adresse de livraison</span> de la commande.
         </p>
       </>
     ),
@@ -113,7 +113,7 @@ const dataProjetPizzeria = (isLight) => ({
     contenu: (
       <>
         <p>
-          L'utilisateur peut <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>créer un compte</span>, <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>modifier ses informations</span> personnelles, et ajouter une <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>adresse de livraison</span> via une API de géocodage.
+          L'utilisateur peut <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>créer un compte</span>, <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>modifier ses informations</span>, et ajouter une <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>adresse de livraison</span> via une API de géocodage.
         </p>
       </>
     ),
@@ -124,7 +124,7 @@ const dataProjetPizzeria = (isLight) => ({
     contenu: (
       <>
         <p>
-          Un <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>menu de gestion</span> accessible dans le header permet aux employés et gérants de gérer les <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>ingrédients</span>, les <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>produits</span>, les <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>utilisateurs</span> ainsi que les <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>commandes en cours</span>.
+          Un <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>menu de gestion</span> accessible dans le header permet au gérant de gérer les <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>ingrédients</span>, les <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>produits</span>, les <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>utilisateurs</span> ainsi que les <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>commandes en cours</span>.
         </p>
       </>
     ),
@@ -135,7 +135,7 @@ const dataProjetPizzeria = (isLight) => ({
     contenu: (
       <>
         <p>
-          Un <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>système de messagerie</span> permet aux utilisateurs d’envoyer des messages à la pizzeria. Les employés peuvent <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>lire</span> et <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>valider</span> ces messages pour assurer un suivi client.
+          Un <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>système de messagerie</span> permet aux clients d’envoyer des messages à la pizzeria. Le gérant peut <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>lire</span> et <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>valider</span> ces messages pour assurer un suivi client.
         </p>
       </>
     ),
@@ -146,7 +146,7 @@ const dataProjetPizzeria = (isLight) => ({
     contenu: (
       <>
         <p>
-          Les pizzaiolos disposent d’une page listant les commandes triées par <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>heure</span>. Ils peuvent les valider une fois la <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>préparation terminée</span>.
+          Les pizzaiolos disposent d’une page listant les commandes triées par <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>heure</span> de préparation. Ils peuvent les valider une fois la <span className={`${isLight ? 'text-light-contrast' : 'text-dark-contrast'} font-bold`}>préparation terminée</span>.
         </p>
       </>
     ),

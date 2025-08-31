@@ -1,5 +1,5 @@
 
-import Header from '../layout/header';
+import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import { useTheme } from '../layout/ThemeContext';
 import ProjetPrésentation from '../layout/projets/ProjetPrésentation';
@@ -38,7 +38,7 @@ function ProjetPizzeria({ }) {
                 isLight={isLight}
                 titre="Site web d'une pizzeria"
                 description={[
-                    `Après avoir suivi plusieurs cours en ligne sur React, j'ai décidé de me lancer dans un projet pour mettre en pratique ce que j'avais appris.`
+                    `Projet commencé pendant ma formation de développeur web et web mobile à l'ENI puis continué pour en faire une synthèse de ce que j'avais appris.`
                 ]}
                 technologies={['Node.js', 'React', 'TailwindCSS', 'MySQL']}
                 logoTechnologies={['devicon-nodejs-plain-wordmark', 'devicon-react-original', 'devicon-tailwindcss-original', 'devicon-mysql-original']}

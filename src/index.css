@@ -24,17 +24,9 @@ html {
   background-color: #fdba68;
 }
 
-/* .bg-light-bouton:hover {
-  background-color: #ffb151; /* un peu plus foncé que #F5B769  
-} */
-
 .bg-light-bouton-second {
   background-color: #ffffff;
 }
-
-/* .bg-light-bouton-second:hover {
-  background-color: #fcaf51; /* un peu plus foncé que #ffd9ab   
-} */
 
   .text-light-primary {
     color: #2E2E2E;
@@ -57,7 +49,7 @@ html {
   }
 
   .text-light-contrast {
-    color: #C08A3E;
+    color: #ac7b38;
   }
 
   .bg-dark {

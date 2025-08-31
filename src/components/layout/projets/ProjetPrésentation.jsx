@@ -97,7 +97,7 @@ function ProjetPrésentation({
                     active:shadow-none active:translate-x-[2px] active:translate-y-[2px]
                     ${isLight ? 'bg-white border-black text-black' : 'bg-dark-bouton-second text-dark-primary border-dark-bouton'}`}
             style={{
-              boxShadow: `2px 2px 0 0 ${isLight ? '#2E2E2E' : '#CBD5E1'}`,
+              boxShadow: `2px 2px 0 0 ${isLight ? '#000000' : '#EEEEEE'}`,
             }}
           >
             <FaGithub className="w-4 h-4 md:w-5 md:h-5" />
@@ -162,7 +162,7 @@ function ProjetPrésentation({
       {/* Swiper Section */}
       <motion.div variants={childVariants} className="relative w-full md:w-10/12">
         <Swiper
-          spaceBetween={30}
+          spaceBetween={5}
           slidesPerView={1}
           pagination={{ clickable: true, el: '.custom-pagination' }}
           modules={[Pagination]}

@@ -18,7 +18,7 @@ function Projets({ isLight }) {
 
   const sectionVariants = {
     hidden: { opacity: 0, y: 40 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
   };
 
   const projets = [
@@ -68,11 +68,11 @@ function Projets({ isLight }) {
       </motion.h2>
 
       {projets.map(projet => (
-        isDesktop
-          ? 
+        // isDesktop
+        //   ? 
           <ConteneurProjet key={projet.nomProjet} isLight={isLight} {...projet} />
-          : 
-          <ConteneurProjetMobile key={projet.nomProjet} isLight={isLight} {...projet} />
+          // : 
+          // <ConteneurProjetMobile key={projet.nomProjet} isLight={isLight} {...projet} />
       ))}
     </motion.div>
   );
