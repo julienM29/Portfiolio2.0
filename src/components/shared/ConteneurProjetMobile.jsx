@@ -3,6 +3,7 @@ import { FaGithub } from 'react-icons/fa';
 import { FaArrowRight } from 'react-icons/fa6';
 import ConteneurTechnologie from './ConteneurTechnologie';
 import CustomButton from './CustomButton';
+import { Link } from 'react-router-dom';
 
 const ConteneurProjetMobile = ({
   isLight,
@@ -23,19 +24,20 @@ const ConteneurProjetMobile = ({
       className={`rounded-3xl   p-4 space-y-6 w-full max-w-[95%] mx-auto 
         ${isLight ? 'bg-light-composant shadow-xl' : 'bg-dark-composant text-dark-primary border border-dark-composant'}`}
     >
-      {/* Image du projet */}
-      <a href={lienProjet} className="block w-full aspect-video overflow-hidden rounded-xl group">
-        <img
-          src={imageProjet}
-          height='1842'
-          width='909'
-          alt={`Image du projet ${nomProjet}`}
-          className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-          decoding="async"
-          loading="lazy"
-        />
-      </a>
-
+<Link
+  to={lienProjet}
+  className="block w-full xl:w-1/2 aspect-video overflow-hidden rounded-xl group flex-shrink-0"
+>
+  <img
+    src={imageProjet}
+    height="1842"
+    width="909"
+    alt={`Image du projet ${nomProjet}`}
+    className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+    decoding="async"
+    loading="lazy"
+  />
+</Link>
       {/* Texte + techs */}
       <div className="space-y-4">
         <div className="flex flex-wrap gap-2">
