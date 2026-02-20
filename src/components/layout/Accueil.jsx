@@ -47,12 +47,12 @@ function Accueil({ isLight }) {
           Bonjour, moi c’est
           <span className={`${textContrast} font-bold`}> Julien Miossec</span>
         </motion.h1>
-
         <motion.p variants={childVariants} className="text-base sm:text-lg md:text-xl w-full leading-relaxed text-justify sm:text-left">
-          Développeur Web, à la recherche d’une
-          <span className={`${textContrast} font-bold`}> alternance de 3 ans</span> en tant qu’<span className="font-semibold">Expert en architecture et développement logiciel</span>
-          <span className={`${textContrast} font-bold`}> (bac +5)</span>, ou d’une
-          <span className={`${textContrast} font-bold`}> première opportunité professionnelle</span> en tant que <span className="font-semibold">développeur</span>.
+          Actuellement en formation de <span className="font-semibold">Concepteur Développeur d'Applications (bac+3)</span>. Je suis à la recherche d’un
+          <span className={`${textContrast} font-bold`}> stage de 2 mois</span>, du <span className="font-semibold">31 août au 23 octobre 2026</span>.
+          Ce stage pourrait être l'occasion de poursuivre ensuite vers une <span className={`${textContrast} font-bold`}>alternance</span> pour la formation d'<span className="font-semibold">expert en architecture et développement logiciel (bac+5) </span>
+           ou de débuter une <span className={`${textContrast} font-bold`}>première expérience professionnelle</span> en tant que <span className="font-semibold">développeur</span>.
+          
         </motion.p>
 
         <motion.ul variants={childVariants} className={`text-sm sm:text-base md:text-lg list-disc list-inside space-y-1 ${textSecondary} text-left`}>
@@ -66,7 +66,7 @@ function Accueil({ isLight }) {
             rel='noopener noreferrer'
             target='_blank'
             icone={<FaLinkedin className="w-6 h-6" />}
-            link={"https://www.linkedin.com/in/julien-miossec-a55869210/"}
+            link={"https://www.linkedin.com/in/julien-miossec/"}
             nom="LinkedIn"
             bgColor={btnBg}
             borderColor={btnBorder}

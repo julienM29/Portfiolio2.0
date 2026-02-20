@@ -33,41 +33,58 @@ function APropos({ isLight }) {
     {
       titre: 'Back-end',
       techs: [
-        { nom: 'Java', image: 'devicon-java-plain', couleur: 'text-blue-500' },
-        { nom: 'PHP', image: 'devicon-php-plain', couleur: 'text-blue-500' },
-        { nom: 'Node.js', image: 'devicon-nodejs-plain-wordmark', couleur: 'text-green-500' }
+        { nom: 'Java', image: 'devicon-java-plain', couleur: 'text-red-600' },
+        { nom: 'PHP', image: 'devicon-php-plain', couleur: 'text-indigo-500' },
+        { nom: 'Python', image: 'devicon-python-plain', couleur: 'text-yellow-500' },
+        { nom: 'Node.js', image: 'devicon-nodejs-plain', couleur: 'text-green-600' },
+        { nom: 'Dart', image: 'devicon-dart-plain', couleur: 'text-blue-400' },
+        { nom: 'Kotlin', image: 'devicon-kotlin-plain', couleur: 'text-purple-500' }
+
       ]
     },
     {
       titre: 'Front-end',
       techs: [
-        { nom: 'HTML', image: 'devicon-html5-plain', couleur: 'text-orange-600' },
-        { nom: 'CSS', image: 'devicon-css3-plain', couleur: 'text-blue-500' },
-        { nom: 'JavaScript', image: 'devicon-javascript-plain', couleur: 'text-yellow-500' },
-        { nom: 'React', image: 'devicon-react-original-wordmark', couleur: 'text-teal-500' }
+        { nom: 'JavaScript', image: 'devicon-javascript-plain', couleur: 'text-yellow-400' },
+        { nom: 'React', image: 'devicon-react-original', couleur: 'text-cyan-400' },
+        { nom: 'TailwindCSS', image: 'devicon-tailwindcss-original', couleur: 'text-teal-400' },
+        { nom: 'Bootstrap', image: 'devicon-bootstrap-plain', couleur: 'text-purple-500' }
+
       ]
     },
     {
       titre: 'Base de données',
       techs: [
+        { nom: 'SQL', image: 'devicon-azuresqldatabase-plain', couleur: 'text-blue-500' },
+        { nom: 'Transact-SQL', image: 'devicon-microsoftsqlserver-plain', couleur: isLight ? 'text-black' : 'text-white' },
+        { nom: 'MySQL', image: 'devicon-mysql-original', couleur: 'text-blue-600' },
         { nom: 'SQL Server', image: 'devicon-microsoftsqlserver-plain', couleur: isLight ? 'text-black' : 'text-white' },
-        { nom: 'MySQL', image: 'devicon-mysql-original', couleur: 'text-blue-500' },
-        { nom: 'MariaDB', image: 'devicon-mariadb-plain', couleur: 'text-teal-800' },
-        { nom: 'DBeaver', image: 'devicon-dbeaver-plain', couleur: 'text-yellow-800' }
+        { nom: 'MariaDB', image: 'devicon-mariadb-plain', couleur: 'text-teal-800' }, { nom: 'DBeaver', image: 'devicon-dbeaver-plain', couleur: 'text-yellow-800' }
       ]
     },
     {
-      titre: 'Frameworks',
+      titre: 'Frameworks & ORM',
       techs: [
-        { nom: 'SpringBoots', image: 'devicon-spring-original', couleur: 'text-green-500' },
+        { nom: 'Spring Boot', image: 'devicon-spring-plain', couleur: 'text-green-600' },
+        { nom: 'Spring Security', image: 'devicon-spring-plain', couleur: 'text-green-700' },
         { nom: 'Symfony', image: 'devicon-symfony-original', couleur: isLight ? 'text-black' : 'text-white' },
-        { nom: 'Fastify', image: 'devicon-fastify-plain', couleur: isLight ? 'text-black' : 'text-white' },
+        { nom: 'Express.js', image: 'devicon-express-original', couleur: isLight ? 'text-black' : 'text-white' },
         { nom: 'Angular', image: 'devicon-angular-plain', couleur: 'text-red-600' },
-        { nom: 'TailwindCSS', image: 'devicon-tailwindcss-original', couleur: 'text-teal-400' },
-        { nom: 'Bootstrap', image: 'devicon-bootstrap-plain', couleur: 'text-purple-500' }
+        { nom: 'Flutter', image: 'devicon-flutter-plain', couleur: 'text-sky-400' },
+
+        { nom: 'Hibernate', image: 'devicon-hibernate-plain', couleur: 'text-yellow-700' },
+        { nom: 'Doctrine', image: 'devicon-doctrine-plain', couleur: 'text-orange-600' }
+      ]
+    },
+    {
+      titre: 'DevOps & Conteneurisation',
+      techs: [
+        { nom: 'Docker', image: 'devicon-docker-plain', couleur: 'text-blue-500' },
+        { nom: 'Kubernetes', image: 'devicon-kubernetes-plain', couleur: 'text-blue-600' }
       ]
     }
   ];
+
 
   return (
     <section
@@ -97,13 +114,14 @@ function APropos({ isLight }) {
             Mon parcours
           </motion.h3>
 
-          <div className={`flex-1 space-y-4 sm:space-y-6 text-sm sm:text-lg leading-relaxed text-justify p-6 sm:p-10 rounded-2xl shadow-xl ${bgCard}`}>
+          <div className={`flex-1 space-y-4 sm:space-y-6 text-sm sm:text-lg leading-relaxed text-justify p-6 sm:p-8 rounded-2xl shadow-xl ${bgCard}`}>
             <p>
-              J’ai suivi la formation de <span className={`${textContrast} font-bold`}>Développeur Web et Web Mobile</span> à l’ <span className={`${textPrimary} font-bold`}>ENI de Nantes</span>, où j’ai acquis des bases solides en développement web que ce soit sur le back-end, front-end ou encore les bases de données.
+              Après avoir obtenu mon diplôme de <span className={`${textContrast} font-bold`}>Développeur Web et Web Mobile</span>, j'ai décidé de poursuivre sur la formation de <span className={`${textContrast} font-bold`}>Concepteur Développeur d'Application (Bac+3)</span>. Grâce à ces formations, j'ai acquis de solides connaissances en développement full stack et en conception d'applications.
             </p>
             <p>
-              En parallèle de ma recherche d’entreprise, je continue de me former en autodidacte sur des technologies modernes telles que <span className={`${textContrast} font-bold`}>Node.js, Tailwind, Fastify</span> ou encore <span className={`${textContrast} font-bold`}>React</span>, en construisant des projets concrets et en approfondissant mes compétences au quotidien.
+              En parallèle de ma formation et de ma recherche de <span className={`${textContrast} font-bold`}>stage</span>, je continue de me former et de pratiquer de nouvelles technologies telles que <span className={`${textContrast} font-bold`}>React</span> et <span className={`${textContrast} font-bold`}>Node.js</span>, en construisant des projets concrets pour approfondir mes compétences.
             </p>
+
             <p>
               Je ne me limite pas à un langage ou un framework. J’apprends vite, je m’adapte, et je m’implique à fond dans ce que je fais.
             </p>

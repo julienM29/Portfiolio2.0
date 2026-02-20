@@ -13,14 +13,14 @@ function Footer({ isLight }) {
 
       <div className="flex flex-wrap gap-3 sm:gap-4 items-center justify-center sm:justify-start">
         <a
-          href="https://www.linkedin.com/in/julien-miossec-a55869210/"
+          href="https://www.linkedin.com/in/julien-miossec/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Lien vers le LinkedIn de Julien Miossec"
-          className={`text-xs md:text-sm flex gap-2 items-center font-semibold px-4 py-2 rounded-3xl border-2 cursor-pointer transition-transform duration-100 active:shadow-none active:translate-x-[3px] active:translate-y-[3px] hover:scale-[1.02] ${isLight ? 'bg-light-bouton border-light-bouton text-black' : 'bg-dark-bouton border-dark-bouton text-dark-primary'}`}
+          className={`text-xs flex gap-2 items-center font-semibold px-4 py-2 rounded-3xl border-2 cursor-pointer transition-transform duration-100 active:shadow-none active:translate-x-[3px] active:translate-y-[3px] hover:scale-[1.02] ${isLight ? 'bg-light-bouton border-light-bouton text-black' : 'bg-dark-bouton border-dark-bouton text-dark-primary'}`}
           style={{ boxShadow: `2px 2px 0 0 ${isLight ? '#1E160F' : '#EEEEEE'}` }}
         >
-          <FaLinkedin className="w-5 h-5" />
+          <FaLinkedin className="w-4 h-4" />
           LinkedIn
         </a>
 
@@ -29,10 +29,10 @@ function Footer({ isLight }) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Lien vers le GitHub de Julien Miossec"
-          className={`text-xs md:text-sm flex gap-2 items-center font-semibold px-4 py-2 rounded-3xl border-2 cursor-pointer transition-transform duration-100 active:shadow-none active:translate-x-[3px] active:translate-y-[3px] hover:scale-[1.02] ${isLight ? 'bg-light-bouton-second border-light-bouton text-black' : 'bg-dark-bouton-second border-dark-bouton text-dark-primary'}`}
+          className={`text-xs flex gap-2 items-center font-semibold px-4 py-2 rounded-3xl border-2 cursor-pointer transition-transform duration-100 active:shadow-none active:translate-x-[3px] active:translate-y-[3px] hover:scale-[1.02] ${isLight ? 'bg-light-bouton-second border-light-bouton text-black' : 'bg-dark-bouton-second border-dark-bouton text-dark-primary'}`}
           style={{ boxShadow: `2px 2px 0 0 ${isLight ? '#1E160F' : '#EEEEEE'}` }}
         >
-          <FaGithub className="w-5 h-5" />
+          <FaGithub className="w-4 h-4" />
           GitHub
         </a>
       </div>

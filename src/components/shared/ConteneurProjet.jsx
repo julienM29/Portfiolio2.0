@@ -34,7 +34,7 @@ const ConteneurProjet = ({
     height="1842"
     width="909"
     alt={`Image du projet ${nomProjet}`}
-    className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+    className="w-full h-full object-fit transition-transform duration-500 ease-in-out group-hover:scale-105"
     decoding="async"
     loading="lazy"
   />

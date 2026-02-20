@@ -6,6 +6,7 @@ import ConteneurProjet from '../shared/ConteneurProjet';
 import logoEvent from '../../assets/accueil.webp';
 import logoPizzeria from '../../assets/accueil_PizzaOnLine.webp';
 import logoKerisnel from '../../assets/e-commerce/site_kerisnel.webp';
+import imageDashboardAccueil from '../../assets/dashboard/dashboardAccueilDark.webp';
 
 function Projets({ isLight }) {
   const projetsRef = useRef(null);
@@ -19,6 +20,16 @@ function Projets({ isLight }) {
   };
 
   const projets = [
+     {
+      imageProjet: imageDashboardAccueil,
+      nomProjet: 'Dashboard admin',
+      listeTechnologies: ['Node.js','React', 'TailwindCSS', 'MySQL'],
+      listeImageTechnologies: ['devicon-nodejs-plain-wordmark', 'devicon-react-original', 'devicon-tailwindcss-original', 'devicon-mysql-original'],
+      listeCouleurTechnologies: ['text-green-600', 'text-teal-500', 'text-teal-400', 'text-blue-500'],
+descriptionProjet: [
+  "Dashboard admin pour site e-commerce : gestion des produits, commandes, messagerie, statistiques du site et notifications, avec React, Node.js et TailwindCSS."
+],      lienProjet: '/projet-Dashboard'
+    },
     {
       imageProjet: logoKerisnel,
       nomProjet: 'Site E-commerce',

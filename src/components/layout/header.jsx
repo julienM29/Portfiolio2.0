@@ -9,12 +9,12 @@ function Header({ isLight, setIsLight }) {
   const isHome = location.pathname === '/';
 
   return (
-    <header role="banner" className="fixed top-0 left-0 w-full z-50 bg-transparent flex items-center h-32 justify-center">
+    <header role="banner" className=" pointer-events-none fixed top-0 left-0 w-full z-50 bg-transparent flex items-center h-32 justify-center">
       <nav
-        className={`w-11/12 md:w-md mx-auto flex items-center justify-between px-5 py-2 rounded-full shadow-sm border text-gray-500 backdrop-blur-3xl
+        className={`pointer-events-auto w-11/12 md:w-md mx-auto flex items-center justify-between px-5 py-2 rounded-full shadow-sm border text-gray-500 backdrop-blur-md transition-all duration-300
         ${isLight
-            ? 'bg-[#ffd09b] text-black border-neutral-700/20 shadow-amber-100/40'
-            : 'bg-[#393E46] text-white border-amber-50/20 shadow-white/30'
+            ? 'bg-[#ffd09b]/80 text-black border-neutral-700/20 shadow-amber-100/40'
+            : 'bg-[#393E46]/80 text-white border-amber-50/20 shadow-white/30'
           }`}
       >
         {/* Logo */}

@@ -21,8 +21,6 @@ export default function PageWrapper({ children }) {
   }, []);
 
   return (
-    <div className={`${isLight ? 'bg-light' : 'bg-dark'} min-h-screen w-full`}>
-
       <motion.div
         variants={pageVariants}
         initial="initial"
@@ -33,6 +31,5 @@ export default function PageWrapper({ children }) {
       >
         {children}
       </motion.div>
-    </div>
   );
 }

@@ -58,7 +58,7 @@ function ProjetPrésentation({
     <motion.section
       className={`w-full md:w-10/12 lg:w-7/12 max-w-screen-xl mt-32 
               flex flex-col items-center space-y-8 md:space-y-12 px-4 scroll-mt-12
-              ${isLight ? 'bg-light text-light-primary' : 'bg-zinc-900 text-dark-primary'}`}
+              ${isLight ? ' text-light-primary' : ' text-dark-primary'}`}
       id="Presentation"
       variants={containerVariants}
       initial="initial"
@@ -169,20 +169,23 @@ function ProjetPrésentation({
           className={`rounded-2xl shadow-xl border 
                   ${isLight ? 'border-[#3F3A36]/50' : 'border-[#EEEEEE]'}`}
         >
-          {images.map((src, idx) => (
-            <SwiperSlide key={idx}>
-              <img
-                src={src}
-                alt={`Capture ${idx + 1}`}
-                loading='lazy'
-                className="w-full h-auto object-cover aspect-video rounded-2xl cursor-pointer"
-                onClick={() => {
-                  setIndex(idx);
-                  setOpen(true);
-                }}
-              />
-            </SwiperSlide>
-          ))}
+    {images.map((src, idx) => (
+  <SwiperSlide key={idx}>
+    <img
+      src={src}
+      alt={`Capture ${idx + 1}`} // description de l'image
+      title="Cliquer sur l'image pour agrandir" // tooltip au hover
+      loading="lazy"
+      className="w-full h-auto object-cover aspect-video rounded-2xl cursor-pointer"
+      onClick={() => {
+        setIndex(idx);
+        setOpen(true);
+      }}
+      role="button" // indique que c'est cliquable
+      aria-label={`Cliquer pour agrandir la capture ${idx + 1}`} // lecteur d'écran
+    />
+  </SwiperSlide>
+))}
         </Swiper>
         <div
           className={`cursor-pointer custom-pagination mt-4 flex justify-center gap-2 

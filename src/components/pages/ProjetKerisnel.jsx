@@ -26,7 +26,7 @@ function ProjetKerisnel({ }) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -30 }}
             transition={{ duration: 0.5 }}
-            className={`flex flex-col space-y-12 h-full  items-center ${isLight ? 'bg-light' : 'bg-zinc-900'} `}>
+            className={`flex flex-col space-y-12 h-full  items-center   `}>
             <Header isLight={isLight} setIsLight={() => setIsLight(!isLight)} />
             <ProjetPrésentation
                 isLight={isLight}

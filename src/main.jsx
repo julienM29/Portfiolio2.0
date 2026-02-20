@@ -14,6 +14,7 @@ import ProjetKerisnel from './components/pages/ProjetKerisnel';
 import ProjetEvenementiel from './components/pages/ProjetEvenementiel';
 import ProjetPizzeria from './components/pages/ProjetPizzeria';
 import PageWrapper from './components/layout/PageWrapper';
+import ProjetDashboard from './components/pages/ProjetDashboard';
 
 // 👇 Wrapper pour gérer les animations de transition
 function AnimatedRoutes() {
@@ -26,6 +27,7 @@ function AnimatedRoutes() {
         <Route path="/projet-E-Commerce" element={<PageWrapper><ProjetKerisnel /></PageWrapper>} />
         <Route path="/projet-Evenementiel" element={<PageWrapper><ProjetEvenementiel /></PageWrapper>} />
         <Route path="/projet-Pizzeria" element={<PageWrapper><ProjetPizzeria /></PageWrapper>} />
+        <Route path="/projet-Dashboard" element={<PageWrapper><ProjetDashboard /></PageWrapper>} />
       </Routes>
     </AnimatePresence>
   );

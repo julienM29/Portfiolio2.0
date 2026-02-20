@@ -27,7 +27,7 @@ function Contact({ isLight }) {
 
   const submitMailForm = useCallback(async (dataFormMail) => {
     try {
-      const response = await fetch('https://formspree.io/f/xyzgrknz', {
+      const response = await fetch('https://formsubmit.co/miossecjulien2907@gmail.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(dataFormMail),

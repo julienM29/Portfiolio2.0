@@ -23,7 +23,7 @@ function HomePage() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -30 }}
       transition={{ duration: 0.5 }}
-      className={`flex flex-col space-y-18 md:space-y-24 items-center ${isLight ? 'bg-light' : 'bg-dark'}`}
+      className={`flex flex-col space-y-18 md:space-y-24 items-center  `}
     >
       {/* Header chargé immédiatement */}
       <Header isLight={isLight} setIsLight={toggleTheme} />
