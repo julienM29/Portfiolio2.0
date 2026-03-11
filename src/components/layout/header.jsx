@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import logoPortfolioLightMode from '../../assets/logo_LightMode.webp';
 import logoPortfolioDarkMode from '../../assets/logo_DarkMode.webp';
 import LienHeader from '../shared/LienHeader';
