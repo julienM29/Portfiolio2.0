@@ -27,10 +27,14 @@ function Contact({ isLight }) {
 
   const submitMailForm = useCallback(async (dataFormMail) => {
     try {
-      const response = await fetch('https://formsubmit.co/miossecjulien2907@gmail.com', {
+       const formData = new FormData();
+    formData.append('prenom', dataFormMail.prenom);
+    formData.append('nom', dataFormMail.nom);
+    formData.append('email', dataFormMail.email);
+    formData.append('message', dataFormMail.message);
+      const response = await fetch('https://formsubmit.co/ajax/miossecjulien2907@gmail.com', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(dataFormMail),
+        body: formData,
       });
 
       if (response.ok) {
@@ -72,6 +76,7 @@ function Contact({ isLight }) {
   };
 
   return (
+    <>
     <motion.div
       ref={contactRef}
       initial="hidden"
@@ -161,8 +166,11 @@ function Contact({ isLight }) {
             </button>
           </motion.div>
         </motion.form>
+        
       </motion.div>
+      
     </motion.div>
+    </>
   );
 }
 

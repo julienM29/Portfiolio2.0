@@ -121,7 +121,7 @@ function ProjetPrésentation({
             <div
               key={techno}
               className={`inline-flex items-center gap-2 rounded-full border-2 py-1  px-3 
-        text-sm sm:text-base
+        text-xs sm:text-base
         ${isLight
                   ? 'border-light bg-light-composant text-light-primary focus:ring-light-accent'
                   : 'border-white/60 bg-dark-bouton-second text-white focus:ring-dark-accent'

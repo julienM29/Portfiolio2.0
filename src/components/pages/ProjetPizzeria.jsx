@@ -40,9 +40,9 @@ function ProjetPizzeria({ }) {
                 description={[
                     `Projet commencé pendant ma formation de développeur web et web mobile à l'ENI puis continué pour en faire une synthèse de ce que j'avais appris.`
                 ]}
-                technologies={['Node.js', 'React', 'TailwindCSS', 'MySQL']}
-                logoTechnologies={['devicon-nodejs-plain-wordmark', 'devicon-react-original', 'devicon-tailwindcss-original', 'devicon-mysql-original']}
-                couleursLogoTechnologies={['text-green-600', 'text-teal-500', 'text-teal-400', 'text-blue-500']}
+                technologies={['PHP', 'Symfony', 'TailwindCSS', 'MySQL']}
+                logoTechnologies={['devicon-php-plain', 'devicon-symfony-original', 'devicon-tailwindcss-original', 'devicon-mysql-original']}
+                couleursLogoTechnologies={['text-indigo-500', 'text-black', 'text-teal-400', 'text-blue-500']}
                 images={[imageHome, imageModal, imagePanier,
                     imageGestionMenu, imageAjoutIngredient, imageAjoutProduit,
                     imageModifierProduit1, imageModifierProduit2, imageGestionStock,

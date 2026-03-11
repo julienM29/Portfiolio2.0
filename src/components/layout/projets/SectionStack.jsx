@@ -2,7 +2,7 @@ const SectionStack = ({ isLight, stackFrontend, stackBackend, stackDatabase }) =
   const BadgeTechno = ({ nom, image, couleur }) => (
     <div
       className={`inline-flex items-center gap-2 rounded-full border py-1.5 px-3 
-        text-sm sm:text-base
+        text-xs sm:text-base
         ${isLight
           ? 'border-light bg-light-composant text-light-primary focus:ring-light-accent'
           : 'border-white/60 bg-dark-bouton-second text-white focus:ring-dark-accent'
@@ -26,7 +26,7 @@ const SectionStack = ({ isLight, stackFrontend, stackBackend, stackDatabase }) =
         <h3 className={`titre text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 ${isLight ? 'text-light-primary' : 'text-dark-primary'}`}>
           Frontend
         </h3>
-        <div className="flex flex-wrap gap-2 sm:gap-3">
+        <div className="flex flex-wrap gap-2 sm:gap-3 ">
           {stackFrontend.map((tech, idx) => (
             <BadgeTechno key={idx} {...tech} />
           ))}
