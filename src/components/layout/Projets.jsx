@@ -6,8 +6,10 @@ import ConteneurProjet from '../shared/ConteneurProjet';
 import logoEvent from '../../assets/accueil.webp';
 import logoPizzeria from '../../assets/accueil_PizzaOnLine.webp';
 import logoKerisnel from '../../assets/e-commerce/site_kerisnel.webp';
-import imageDashboardAccueil from '../../assets/dashboard/dashboardAccueilDark.webp';
-
+import dashboard_540 from '../../assets/dashboard_540.png'; 
+import kerisnel_540 from '../../assets/kerisnel_540.webp'; 
+import evenement_540 from '../../assets/evenement_540.webp'; 
+import pizzeria_540 from '../../assets/pizzeria_540.webp'; 
 function Projets({ isLight }) {
   const projetsRef = useRef(null);
   const projetsInView = useInView(projetsRef, { once: true, margin: '-100px' });
@@ -21,7 +23,7 @@ function Projets({ isLight }) {
 
   const projets = [
      {
-      imageProjet: imageDashboardAccueil,
+      imageProjet: dashboard_540,
       nomProjet: 'Dashboard admin',
       listeTechnologies: ['Node.js','React', 'TailwindCSS', 'MySQL'],
       listeImageTechnologies: ['devicon-nodejs-plain-wordmark', 'devicon-react-original', 'devicon-tailwindcss-original', 'devicon-mysql-original'],
@@ -31,7 +33,7 @@ descriptionProjet: [
 ],      lienProjet: '/projet-Dashboard'
     },
     {
-      imageProjet: logoKerisnel,
+      imageProjet: kerisnel_540,
       nomProjet: 'Site E-commerce',
       listeTechnologies: ['Node.js', 'React', 'TailwindCSS', 'MySQL'],
       listeImageTechnologies: ['devicon-nodejs-plain-wordmark', 'devicon-react-original', 'devicon-tailwindcss-original', 'devicon-mysql-original'],
@@ -40,7 +42,7 @@ descriptionProjet: [
       lienProjet: '/projet-E-Commerce'
     },
     {
-      imageProjet: logoEvent,
+      imageProjet: evenement_540,
       nomProjet: 'Site web évènementiel',
       listeTechnologies: ['Node.js', 'Bootstrap', 'MySQL'],
       listeImageTechnologies: ['devicon-nodejs-plain-wordmark', 'devicon-bootstrap-plain', 'devicon-mysql-original'],
@@ -49,7 +51,7 @@ descriptionProjet: [
       lienProjet: '/projet-Evenementiel'
     },
     {
-      imageProjet: logoPizzeria,
+      imageProjet: pizzeria_540,
       nomProjet: 'Site web pizzéria',
       listeTechnologies: ['PHP', 'Symfony', 'TailwindCSS', 'MySQL'],
       listeImageTechnologies: ['devicon-php-plain', 'devicon-symfony-original', 'devicon-tailwindcss-original', 'devicon-mysql-original'],
@@ -65,7 +67,7 @@ descriptionProjet: [
       initial="hidden"
       animate={projetsInView ? 'visible' : 'hidden'}
       variants={sectionVariants}
-      className="w-[90%] sm:w-4/5 md:w-7/12 space-y-8 sm:space-y-10 scroll-mt-28 md:scroll-mt-12"
+      className="w-[90%] sm:w-4/5 md:w-[65%] space-y-8 sm:space-y-10 scroll-mt-28 md:scroll-mt-12"
       id="projets"
     >
       <motion.h2

@@ -83,7 +83,7 @@ function Contact({ isLight }) {
       animate={contactInView ? 'visible' : 'hidden'}
       variants={containerVariants}
       id="contact"
-      className={`w-11/12 sm:w-9/12 md:w-7/12 mx-auto flex flex-col rounded-2xl space-y-6 md:space-y-10 scroll-mt-28 md:scroll-mt-12 ${isLight ? 'text-light-primary' : 'text-dark-primary'}`}
+      className={`w-11/12 sm:w-9/12 md:w-[65%] mx-auto flex flex-col rounded-2xl space-y-6 md:space-y-10 scroll-mt-28 md:scroll-mt-12 ${isLight ? 'text-light-primary' : 'text-dark-primary'}`}
     >
       {/* Toast accessible */}
       <div aria-live="polite">

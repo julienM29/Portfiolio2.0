@@ -90,7 +90,7 @@ function APropos({ isLight }) {
     <section
       id="Apropos"
       ref={sectionRef}
-      className={`w-11/12 sm:w-9/12 md:w-7/12 mx-auto space-y-12 sm:space-y-16 scroll-mt-28 md:scroll-mt-12 ${textPrimary}`}
+      className={`w-11/12 sm:w-9/12 md:w-[65%] mx-auto space-y-12 sm:space-y-16 scroll-mt-28 md:scroll-mt-12 ${textPrimary}`}
     >
       {/* Titre principale */}
       <motion.h2

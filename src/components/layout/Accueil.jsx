@@ -40,7 +40,7 @@ function Accueil({ isLight }) {
       initial="initial"
       animate="animate"
       exit="exit"
-      className={`relative w-[90%] sm:w-4/5 md:w-7/12 max-md:min-h-[85vh] min-h-[95vh] flex flex-col items-center justify-center space-y-6 sm:space-y-8 ${textPrimary}`}
+      className={`relative w-[90%] sm:w-4/5 md:w-[65%] max-md:min-h-[85vh] min-h-[95vh] flex flex-col items-center justify-center space-y-6 sm:space-y-8 ${textPrimary}`}
     >
       <div className='flex flex-col gap-6 h-full w-full justify-center max-md:mt-30'>
         <motion.h1 variants={childVariants} className={`titre text-2xl sm:text-3xl md:text-5xl font-bold leading-tight max-md:text-center`}>
