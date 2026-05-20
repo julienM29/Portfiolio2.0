@@ -116,13 +116,13 @@ function APropos({ isLight }) {
 
           <div className={`flex-1 space-y-4 sm:space-y-6 text-sm sm:text-lg leading-relaxed text-justify p-6 sm:p-8 rounded-2xl shadow-xl ${bgCard}`}>
             <p>
-              Après avoir obtenu mon diplôme de <span className={`${textContrast} font-bold`}>Développeur Web et Web Mobile</span>, j'ai décidé de poursuivre sur la formation de <span className={`${textContrast} font-bold`}>Concepteur Développeur d'Application (Bac+3)</span>. Grâce à ces formations, j'ai acquis de solides connaissances en développement full stack et en conception d'applications.
+              Après avoir obtenu mon diplôme de <span className={`${textContrast} font-bold`}>Développeur Web et Web Mobile</span>, j'ai décidé de poursuivre sur la formation de <span className={`${textContrast} font-bold`}>Concepteur Développeur d'Application (Bac+3)</span>. Grâce à ces formations et à mes projets personnels, j'ai acquis de solides connaissances en développement full stack et en conception d'applications.
             </p>
             <p>
-              En parallèle de ma formation et de ma recherche de <span className={`${textContrast} font-bold`}>stage</span>, je continue de me former et de pratiquer de nouvelles technologies telles que <span className={`${textContrast} font-bold`}>React</span> et <span className={`${textContrast} font-bold`}>Node.js</span>, en construisant des projets concrets pour approfondir mes compétences.
+              En parallèle de ma formation et de ma recherche de <span className={`${textContrast} font-bold`}>stage</span> et <span className={`${textContrast} font-bold`}>d'alternance</span>, je continue de me former et de pratiquer de nouvelles technologies telles que <span className={`${textContrast} font-bold`}>React</span> et <span className={`${textContrast} font-bold`}>Node.js</span>, en construisant des projets concrets pour approfondir mes compétences.
             </p>
 
-            <p>
+            <p className='italic'>
               Je ne me limite pas à un langage ou un framework. J’apprends vite, je m’adapte, et je m’implique à fond dans ce que je fais.
             </p>
 
